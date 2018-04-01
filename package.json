@@ -1,0 +1,69 @@
+{
+  "name": "LiMS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "rm -R dist && webpack -p",
+    "serve": "webpack-dev-server --history-api-fallback --inline --progress",
+    "serveDist": "cd dist && php -S localhost:8080"
+  },
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-animate": "^1.6.4",
+    "angular-aria": "^1.6.4",
+    "angular-material": "^1.1.4",
+    "angular-messages": "^1.6.4",
+    "angular-resource": "^1.6.4",
+    "angular-sanitize": "^1.6.4",
+    "angular-translate": "^2.15.1",
+    "angular-translate-loader-partial": "^2.15.1",
+    "angular-ui-router": "^0.4.2",
+    "material-design-iconic-font": "^2.2.0",
+    "material-design-lite": "^1.3.0",
+    "ng-http-progress": "^1.0.4"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.6.4",
+    "autoprefixer": "^6.7.7",
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "compression-webpack-plugin": "^1.0.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^1.1.11",
+    "html-minify-loader": "^1.1.0",
+    "html-webpack-plugin": "^2.28.0",
+    "istanbul-instrumenter-loader": "^2.0.0",
+    "material-design-icons": "^3.0.1",
+    "node-libs-browser": "^2.0.0",
+    "node-sass": "^4.5.2",
+    "null-loader": "^0.1.1",
+    "path": "^0.12.7",
+    "phantomjs": "^2.1.7",
+    "phantomjs-prebuilt": "^2.1.14",
+    "postcss-loader": "^1.3.3",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.6.1",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.4.1",
+    "webpack-bundle-analyzer": "^2.9.0",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "engines": {
+    "node": "6.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ayush-bhandari/LiMS"
+  },
+  "author": "Ayush Bhandari",
+  "license": "MIT",
+  "homepage": "https://github.com/ayush-bhandari/LiMS/blob/master/README.md"
+}

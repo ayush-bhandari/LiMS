@@ -1,0 +1,38 @@
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <div class="mdl-layout-title toolbar_title" layout="row" layout-align="space-around center">
+    
+        <img class="toolbar_image mdl-layout--large-screen-only" ng-src="../../assets/lims.png" ui-sref="home"/>
+        
+    
+      </div><p class="copyright-text">Powered by <a href="http://hashmake.com.np" target="_blank">Hash Make</a></p>
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+
+        <md-button  ui-sref="home">DASHBOARD</md-button>
+        <md-button  ui-sref="books">BOOKS</md-button>
+        <md-button  ui-sref="students">STUDENTS</md-button>
+      
+      </nav>
+      
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title" layout="row" layout-align="center center">
+      
+      <img class="sidebar_image" ng-src="../../assets/lims.png" ui-sref="home" />
+      <p class="copyright-text">Powered by <a href="http://hashmake.com.np" target="_blank">Hash Make</a></p>
+    </span>
+    <nav class="mdl-navigation">
+
+        <md-button class="md-raised md-primary" ui-sref="home">DASHBOARD</md-button>
+        <md-button class="md-raised md-primary" ui-sref="books">BOOKS</md-button>
+        <md-button class="md-raised md-primary" ui-sref="students">STUDENTS</md-button>
+      
+    </nav>
+  </div>
+  <main class="mdl-layout__content" flex>
+    <div ui-view class="page-content"></div>
+  </main>
+</div>
